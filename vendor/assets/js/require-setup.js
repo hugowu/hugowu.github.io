@@ -4,7 +4,6 @@
 // To config RequireJS after it’s loaded, pass the below object into require.config();
 
 var require = {
-    baseUrl:'../../',
     shim : {
         "bootstrap" : { "deps" :['jquery'] }
     },
