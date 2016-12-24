@@ -1,5 +1,5 @@
 require(['jquery', 'bootstrap'], function ($) {
-    alert($("#test").text());
+    //alert($("#test").text());
 }, function (err) {
 
 });
