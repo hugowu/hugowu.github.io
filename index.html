@@ -73,19 +73,24 @@
     <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
     <p>To see the difference between static and fixed top navbars, just scroll.</p>
     <p>
-      <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+      <a id ="test" class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
     </p>
   </div>
 
 </div> <!-- /container -->
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="vendor/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="vendor/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- require js  -->
+<script src="vendor/assets/js/require-setup.js"></script>
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+<script type="text/javascript">
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='vendor/assets/js/require.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+</script>
+<!-- index js  -->
+<script src="app/js/app.js"></script>
+
 </body>
 </html>
